@@ -6,10 +6,10 @@
   const {page} = details
 </script>
 
-<h1>buggy, doesn't change</h1>
+<h2>buggy, doesn't change</h2>
 
 <!-- THIS LINE -->
-<h2>This page is <strong>{page}</strong></h2>
+<h1>This page is <strong>{page}</strong></h1>
 
 <code>export let details;</code>
 <code>{`const {page} = details;`}</code>
@@ -20,10 +20,10 @@
 <br>
 <br>
 
-<h1>fixed, does change</h1>
+<h2>fixed, does change</h2>
 
 <!-- AND THIS LINE -->
-<h2>This page is <strong>{details.page}</strong></h2>
+<h1>This page is <strong>{details.page}</strong></h1>
 
 <code>export let details;</code>
 <code>...</code>
