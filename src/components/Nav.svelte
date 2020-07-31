@@ -3,9 +3,7 @@
 		<li><a href="hello">hello</a></li>
 		<li><a href="world">world</a></li>
 		<li><a href="svelte">svelte</a></li>
-		<li><a href="hello/fix">hello/fix</a></li>
-		<li><a href="world/fix">world/fix</a></li>
-		<li><a href="svelte/fix">svelte/fix</a></li>
+		<li><a href="sapper">sapper</a></li>
 	</ul>
 </nav>
 
@@ -33,23 +31,7 @@
 		float: left;
 	}
 
-	[aria-current] {
-		position: relative;
-		display: inline-block;
-	}
-
-	[aria-current]::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
-		display: block;
-		bottom: -1px;
-	}
-
 	a {
-		text-decoration: none;
 		padding: 1em 0.5em;
 		display: block;
 	}
