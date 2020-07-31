@@ -6,9 +6,31 @@
   const {page} = details
 </script>
 
-<svelte:head>
-  <title>{page}</title>
-</svelte:head>
+<h1>buggy, doesn't change</h1>
 
-<h1>(buggy, doesn't change) This page is: <strong>{page}</strong></h1>
-<h1>(fixed, does change) This page is: <strong>{details.page}</strong></h1>
+<!-- THIS LINE -->
+<h2>This page is <strong>{page}</strong></h2>
+
+<code>export let details;</code>
+<code>{`const {page} = details;`}</code>
+<code>...</code>
+<code>{'<p>{page}</p>'}</code>
+
+<br>
+<br>
+<br>
+
+<h1>fixed, does change</h1>
+
+<!-- AND THIS LINE -->
+<h2>This page is <strong>{details.page}</strong></h2>
+
+<code>export let details;</code>
+<code>...</code>
+<code>{'<p>{details.page}</p>'}</code>
+
+<style>
+  code {
+    display: block;
+  }
+</style>
