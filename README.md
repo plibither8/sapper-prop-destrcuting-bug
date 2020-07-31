@@ -1,3 +1,3 @@
-# sapper-prop-destrcuting-bug
+# sapper-prop-destructuring-bug
 
 
